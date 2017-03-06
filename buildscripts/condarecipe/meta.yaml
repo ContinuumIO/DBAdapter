@@ -1,0 +1,46 @@
+package:
+  name: dbadapter
+  version: "2.0.0"
+
+source:
+  path: ../../
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python 
+    - numpy
+    - cython
+    - unixodbc >=2.2.14 [linux]
+    - postgresql 9.1.4
+
+  run:
+    - python 
+    - numpy
+    - pandas
+    - six
+    - ordereddict     [py26]
+    - unixodbc >=2.2.14 [linux]
+    - postgresql 9.1.4
+    - psqlodbc >=09.01.0100
+    - sqlite >=0.96
+
+    # According to the pyodbc/INSTALL.rst document
+    #- mysql-connector-python >=5.1.10
+
+test:
+  requires:
+    - nose
+    - pytest
+
+  imports:
+    - dbadapter
+    - dbadapter.pyodbc
+
+about:
+  home: http://www.continuum.io/
+  license: proprietary - Continuum Analytics, Inc.
+  license_family: Proprietary
+  summary: python interface for databases, NoSQL stores, Amazon S3, and large data files

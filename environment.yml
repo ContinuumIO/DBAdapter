@@ -1,0 +1,10 @@
+name: dbadapter
+dependencies:
+- ipython
+- numpy
+- pandas
+- pytest
+- cython
+- unixodbc
+- nose
+
