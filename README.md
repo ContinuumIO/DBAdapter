@@ -27,10 +27,14 @@ Visual Studio 2008, Python 3.3 and 3.4 needs Visual Studio 2010, and Python
 3.5 needs Visual Studio 2015.
 
 1. Build DBAdapter using the following command:
-   `conda build buildscripts/condarecipe --python 3.5`
+   ```
+   conda build buildscripts/condarecipe --python 3.5
+   ```
 
 1. DBAdapter can now be installed from the built conda package:
-   `conda install dbadapter --use-local`
+   ```
+   conda install dbadapter --use-local
+   ```
 
 Building By Hand
 ----------------
@@ -44,12 +48,16 @@ Visual Studio 2008, Python 3.3 and 3.4 needs Visual Studio 2010, and Python
 For building DBAdapter for local development/testing:
 
 1. Install most of the above dependencies into environment called 'dbadapter':
-   `conda env create -f environment.yml`
+   ```
+   conda env create -f environment.yml
+   ```
 
    Be sure to activate new dbadapter environment before proceeding.
 
 1. Build DBAdapter using Cython/distutils:
-   `python setup.py build_ext --inplace`
+   ```
+   python setup.py build_ext --inplace
+   ```
 
 Testing
 -------
