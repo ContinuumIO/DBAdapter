@@ -65,7 +65,7 @@ Testing
 Tests can be run by calling the dbadapter module's test function.  By default
 only the TextAdapter tests will be run:
 
-TODO: There are no tests for pyodbc (yet).
+TODO: The pyodbc tests live in the `dbadapter/pyodbc/test*` directories. They are not being run (yet).
 ```python
 python -Wignore -c 'import dbadapter; dbadapter.test()'
 ```
