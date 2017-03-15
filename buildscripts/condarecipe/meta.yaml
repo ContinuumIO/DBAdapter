@@ -41,6 +41,5 @@ test:
 
 about:
   home: http://www.continuum.io/
-  license: proprietary - Continuum Analytics, Inc.
-  license_family: Proprietary
-  summary: python interface for databases, NoSQL stores, Amazon S3, and large data files
+  license: BSD
+  summary: python interface for SQL databases
