@@ -72,3 +72,13 @@ python -Wignore -c 'import dbadapter; dbadapter.test()'
 
 (Note: `numpy.testing` might produce a FurtureWarning that is not directly
 relevant to these unit tests).
+
+
+Related projects
+----------------
+
+- TextAdapter (CSV, JSON, etc): https://github.com/ContinuumIO/TextAdapter
+- PostgresAdapter (PostgreSQL): https://github.com/ContinuumIO/PostgresAdapter
+- AccumuloAdapter (Apache Accumulo): https://github.com/ContinuumIO/AccumuloAdapter
+- MongoAdapter (MongoDB): https://github.com/ContinuumIO/MongoAdapter
+
